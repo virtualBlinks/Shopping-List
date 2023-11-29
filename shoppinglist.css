@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+        body{
+            animation-name: inpute;
+            animation-duration: 5s;
+            animation-iteration-count: infinite ;
+            animation-direction:alternate;
+            animation-play-state: running;
+            animation-timing-function: ease;
+}
+        
+  @keyframes inpute {
+  0%{
+  
+    background-color: #22364b ;
+    
+}
+25%{    
+    background-color:#32351ffd;
+
+}
+75%{
+     background-color:  #47685a;
+}
+100%{
+    background-color: #74455b ;
+}
+        }
+        
+        #holder {
+            position: absolute;
+            top: 25px;
+            left: 230px;
+            height: 420px;
+            width: 800px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.354) inset;
+            padding-top: 5px;
+            padding-left: 30px;
+            border-radius: 10px;
+        }
+
+        #list {
+            margin-top: 20px;
+            font-size: 28px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #shopiteminput,
+        #priceinput,
+        #quantityinput {
+            border: none;
+            width: 750px;
+            height: 50px;
+            padding: 0px 10px;
+            margin-top: 25px;
+            font-size: 18px;
+            color: black;
+            outline: none; 
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 5px #007bff inset;
+            animation-name: inputee;
+            animation-duration: 3s;
+            animation-iteration-count: infinite ;
+            animation-direction:alternate;
+            animation-play-state: running;
+            animation-timing-function: ease;
+}
+        
+  @keyframes inputee {
+  0%{
+    left: 10%;
+ box-shadow: 0px 0px 10px 2px #a8ccf3c4 ;
+    
+}
+25%{   
+    left: 25%; 
+    box-shadow: 0px 0px 10px 2px #d6df8db7 inset;
+
+}
+75%{
+    left: 60%;
+     box-shadow: 0px 0px 5px 2px #bcf8e0b7;
+}
+100%{
+    left: 80%;
+    box-shadow: 0px 0px 10px 2px #e7bbd1 inset;
+}
+        }
+
+        #butt {
+            position: absolute;
+            bottom: 40px;
+            left: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+            height: 45px;
+            border: none;
+            font-size: 18px;
+            color: white;
+            border-radius: 10px;
+            background-color:#007bff;
+        }
+
+        #total {
+            position: absolute;
+            right: 50px;
+            bottom: 45px;
+            font-size: 22px;
+        }
+
+        #shopping-list {
+            position: absolute;
+            top: 400px;
+            text-align: left;
+        }
+
+        .item {
+            margin-top: 15px;
+            margin-left: 228px;
+            word-spacing: 20px; 
+            width: 793px;
+            background-color: rgb(23, 133, 163);
+            border-radius: 5px;
+            /* margin-bottom: 10px; */
+            padding: 20px;
+            color: white;
+            position: relative;
+        }
+
+        .edit-button,
+        .delete-button {
+            cursor: pointer;
+            font-size: 18px;
+            width: 110px;
+            height: 35px;
+            border-radius: 5px;
+            right: 20px;
+            position: absolute;
+            bottom: 10px;
+           
+        }
+
+        .edit-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            margin-right: 120px;
+            margin-left: 150px;
+        }
+
+        .delete-button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+        }
+
+        @media screen and (max-width: 768px) {
+    #holder {
+        left: 10px;
+        width: calc(100% - 20px);
+    }
+
+    #list {
+        font-size: 24px;
+    }
+
+    #shopiteminput,
+    #priceinput,
+    #quantityinput {
+        width: calc(100% - 20px);
+    }
+
+    #butt {
+        width: calc(100% - 20px);
+    }
+
+    .item {
+        margin-left: 10px;
+        width: calc(100% - 20px);
+    }
+
+    .edit-button,
+    .delete-button {
+        width: 90px;
+        margin-right: 10px;
+    }
+}
